@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    nav{
+        background-color: skyblue;
+    }
+   .flex-container{
+
+         display: flex;
+
+   }
+   .left-menu{
+
+        flex: 20%;
+
+   }
+  .right-menu{
+
+         flex: 80%;
+  } 
+
+    nav ul{
+
+        list-style-type: none;
+    }
+
+    nav ul li{
+
+        display: inline;
+        margin-left: 30px;
+    }
+  .dropdown .drop-down-list{
+
+      position:  absolute;
+      background-color: skyblue;
+      width: 100px;
+      left: 540px;
+      display:block;
+      box-shadow: rgba(red, green, blue, alpha);
+      z-index: 1;
+
+
+         display: none;
+  }
+   .dropdown:hover .drop-down-list{
+
+         display: block ;
+   }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="flex-container">
+        <div class="left-menu">
+            <h1> Logo </h1>
+            
+        </div>
+        <div class="right-menu">
+            <ul>
+                <li> <a href=""> Home </a></li>
+                <li> <a href=""> About </a></Li>
+                    <li class=" dropdown"> <a href=""> Destination </a>
+                    <div class="drop-down-list">
+                        <a href=""> Delhi</a>
+                        <a href=""> Dehradun</a>
+                        <a href=""> Nainital</a>
+                        <a href=""> Rishikesh</a>
+                 
+                    </div>
+                </li>
+              <li> <a href=""> Gallery </a></li>
+             
+                
+              <li> <a href=""> To Do </a></li>
+            </ul>
+
+        </div>
+    </div>
+     </body>
+    </nav>
+</body>
+</html>
